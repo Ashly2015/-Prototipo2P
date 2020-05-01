@@ -66,6 +66,9 @@ private AsignacionCA ventanaAsignacion;
         jMenuItem7.setText("jMenuItem7");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Rachel Barrios 9959-18-649");
+
+        ventanaP.setName("Rachel Barrios 9959-18-649"); // NOI18N
 
         javax.swing.GroupLayout ventanaPLayout = new javax.swing.GroupLayout(ventanaP);
         ventanaP.setLayout(ventanaPLayout);
