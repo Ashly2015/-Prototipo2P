@@ -18,6 +18,7 @@ private MantenimientoJornada ventanaJornada;
 private MantenimientoMaestro ventanaMaestro;
 private MantenimientoSeccion ventanaSeccion;
 private MantenimientoSede ventanaSede;
+private AsignacionCA ventanaAsignacion;
      
     /**
      * Creates new form Principal
@@ -44,19 +45,17 @@ private MantenimientoSede ventanaSede;
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem13 = new javax.swing.JMenuItem();
-        jMenuItem14 = new javax.swing.JMenuItem();
-        jMenuItem15 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
         Mfacultades = new javax.swing.JMenuItem();
+        MMaestros = new javax.swing.JMenuItem();
+        MAlumnos = new javax.swing.JMenuItem();
         MCarreras = new javax.swing.JMenuItem();
         MCursos = new javax.swing.JMenuItem();
         MSecciones = new javax.swing.JMenuItem();
         MSedes = new javax.swing.JMenuItem();
         MAulas = new javax.swing.JMenuItem();
         MJornadas = new javax.swing.JMenuItem();
-        MAlumnos = new javax.swing.JMenuItem();
-        MMaestros = new javax.swing.JMenuItem();
         jMenu7 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
 
@@ -88,13 +87,12 @@ private MantenimientoSede ventanaSede;
         jMenu4.setText("Procesos");
 
         jMenuItem13.setText("Asignacion cursos a Alumnos");
+        jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem13ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenuItem13);
-
-        jMenuItem14.setText("Asignacion de cursos a maestros");
-        jMenu4.add(jMenuItem14);
-
-        jMenuItem15.setText("Ingreso de notas");
-        jMenu4.add(jMenuItem15);
 
         jMenuBar1.add(jMenu4);
 
@@ -110,6 +108,22 @@ private MantenimientoSede ventanaSede;
             }
         });
         jMenu6.add(Mfacultades);
+
+        MMaestros.setText("Mantenimiento Maestros");
+        MMaestros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MMaestrosActionPerformed(evt);
+            }
+        });
+        jMenu6.add(MMaestros);
+
+        MAlumnos.setText("Mantenimiento Alumnos");
+        MAlumnos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MAlumnosActionPerformed(evt);
+            }
+        });
+        jMenu6.add(MAlumnos);
 
         MCarreras.setText("Mantenimiento Carreras");
         MCarreras.addActionListener(new java.awt.event.ActionListener() {
@@ -158,22 +172,6 @@ private MantenimientoSede ventanaSede;
             }
         });
         jMenu6.add(MJornadas);
-
-        MAlumnos.setText("Mantenimiento Alumnos");
-        MAlumnos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MAlumnosActionPerformed(evt);
-            }
-        });
-        jMenu6.add(MAlumnos);
-
-        MMaestros.setText("Mantenimiento Maestros");
-        MMaestros.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MMaestrosActionPerformed(evt);
-            }
-        });
-        jMenu6.add(MMaestros);
 
         jMenuBar1.add(jMenu6);
 
@@ -263,6 +261,11 @@ ventanaP.add(ventanaMaestro);
 // TODO add your handling code here:
     }//GEN-LAST:event_MMaestrosActionPerformed
 
+    private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
+  ventanaAsignacion= new AsignacionCA();
+ventanaP.add(ventanaAsignacion);      // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem13ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -317,8 +320,6 @@ ventanaP.add(ventanaMaestro);
     private javax.swing.JMenu jMenu8;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem13;
-    private javax.swing.JMenuItem jMenuItem14;
-    private javax.swing.JMenuItem jMenuItem15;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;

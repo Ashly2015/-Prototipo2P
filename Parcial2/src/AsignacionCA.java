@@ -374,13 +374,13 @@ public class AsignacionCA extends javax.swing.JInternalFrame {
     private void cbox_carreraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbox_carreraActionPerformed
         try{
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/siu", "root", "Polo.2015");
-            PreparedStatement pst = cn.prepareStatement("select nombre_carrera from carreras where codigo_carrera= ?");
+            PreparedStatement pst = cn.prepareStatement("select codigo_carrera from carreras where nombre_carrera= ?");
             pst.setString(1, cbox_carrera.getSelectedItem().toString());
 
             ResultSet rs = pst.executeQuery();
 
             if(rs.next()){
-                lb1.setText(rs.getString("nombre_carrera"));
+                lb1.setText(rs.getString("codigo_carrera"));
 
             } else {
 
@@ -397,13 +397,13 @@ public class AsignacionCA extends javax.swing.JInternalFrame {
 
         try{
            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/siu", "root", "Polo.2015");
-            PreparedStatement pst = cn.prepareStatement("select nombre_sede from sedes where codigo_sede= ?");
+            PreparedStatement pst = cn.prepareStatement("select codigo_sede from sedes where nombre_sede= ?");
             pst.setString(1, cbox_sede.getSelectedItem().toString());
 
             ResultSet rs = pst.executeQuery();
 
             if(rs.next()){
-                lb2.setText(rs.getString("nombre_sede"));
+                lb2.setText(rs.getString("codigo_sede"));
 
             } else {
 
@@ -419,13 +419,13 @@ public class AsignacionCA extends javax.swing.JInternalFrame {
     private void cbox_jActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbox_jActionPerformed
 try{
            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/siu", "root", "Polo.2015");
-            PreparedStatement pst = cn.prepareStatement("select nombre_jornada from jornadas where codigo_juornada= ?");
+            PreparedStatement pst = cn.prepareStatement("select codigo_jornada from jornadas where nobre_jornada= ?");
             pst.setString(1, cbox_j.getSelectedItem().toString());
 
             ResultSet rs = pst.executeQuery();
 
             if(rs.next()){
-                lb3.setText(rs.getString("nombre_jornada"));
+                lb3.setText(rs.getString("codigo_jornada"));
 
             } else {
 
@@ -439,13 +439,13 @@ try{
     private void cbox_secActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbox_secActionPerformed
       try{
            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/siu", "root", "Polo.2015");
-            PreparedStatement pst = cn.prepareStatement("select nombre_seccion from secciones where codigo_secion= ?");
+            PreparedStatement pst = cn.prepareStatement("select codigo_seccion from secciones where nombre_secion= ?");
             pst.setString(1, cbox_sec.getSelectedItem().toString());
 
             ResultSet rs = pst.executeQuery();
 
             if(rs.next()){
-                lb4.setText(rs.getString("nombre_seccion"));
+                lb4.setText(rs.getString("codigo_seccion"));
 
             } else {
 
@@ -459,13 +459,13 @@ try{
     private void cbox_aulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbox_aulaActionPerformed
       try{
            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/siu", "root", "Polo.2015");
-            PreparedStatement pst = cn.prepareStatement("select nombre_aula from aulas where codigo_aula= ?");
+            PreparedStatement pst = cn.prepareStatement("select codigo_aula from aulas where nombre_aula= ?");
             pst.setString(1, cbox_aula.getSelectedItem().toString());
 
             ResultSet rs = pst.executeQuery();
 
             if(rs.next()){
-                lb5.setText(rs.getString("nombre_aula"));
+                lb5.setText(rs.getString("codigo_aula"));
 
             } else {
 
@@ -481,13 +481,13 @@ try{
     private void cbox_cursoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbox_cursoActionPerformed
    try{
            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/siu", "root", "Polo.2015");
-            PreparedStatement pst = cn.prepareStatement("select nombre_curso from cursos where codigo_curso= ?");
+            PreparedStatement pst = cn.prepareStatement("select codigo_curso from cursos where nombre_curso= ?");
             pst.setString(1, cbox_curso.getSelectedItem().toString());
 
             ResultSet rs = pst.executeQuery();
 
             if(rs.next()){
-                lb6.setText(rs.getString("nombre_curso"));
+                lb6.setText(rs.getString("codigo_curso"));
 
             } else {
 
@@ -502,13 +502,13 @@ try{
     private void cbox_alumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbox_alumActionPerformed
      try{
            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/siu", "root", "Polo.2015");
-            PreparedStatement pst = cn.prepareStatement("select nombre_alumno from alumnos where codigo_alumno= ?");
+            PreparedStatement pst = cn.prepareStatement("select codigo_alumno from alumnos where nombre_alumno= ?");
             pst.setString(1, cbox_alum.getSelectedItem().toString());
 
             ResultSet rs = pst.executeQuery();
 
             if(rs.next()){
-                lb7.setText(rs.getString("nombre_alumno"));
+                lb7.setText(rs.getString("codigo_alumno"));
 
             } else {
 
