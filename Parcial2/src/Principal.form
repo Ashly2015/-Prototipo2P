@@ -65,36 +65,57 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Mantenimiento Facultades"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MfacultadesActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MCarreras">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Mantenimiento Carreras"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MCarrerasActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MCursos">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Mantenimiento Cursos"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MCursosActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MSecciones">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Mantenimiento Secciones"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MSeccionesActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MSedes">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Mantenimiento Sedes"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MSedesActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MAulas">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Mantenimiento Aulas"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MAulasActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MJornadas">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Mantenimiento Jornada"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MJornadasActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MAlumnos">
               <Properties>
@@ -108,6 +129,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Mantenimiento Maestros"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MMaestrosActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>

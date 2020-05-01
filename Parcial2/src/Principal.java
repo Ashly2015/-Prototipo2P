@@ -10,6 +10,14 @@
  */
 public class Principal extends javax.swing.JFrame {
 private MantenimientoAlumno ventanaAlumno;
+private MantenimientoAula ventanaAula;
+private MantenimientoCarrera ventanaCarrera;
+private MantenimientoCurso ventanaCurso;
+private MantenimientoFacultad ventanaFacultad;
+private MantenimientoJornada ventanaJornada;
+private MantenimientoMaestro ventanaMaestro;
+private MantenimientoSeccion ventanaSeccion;
+private MantenimientoSede ventanaSede;
      
     /**
      * Creates new form Principal
@@ -96,24 +104,59 @@ private MantenimientoAlumno ventanaAlumno;
         jMenu6.setText("Herramientas");
 
         Mfacultades.setText("Mantenimiento Facultades");
+        Mfacultades.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MfacultadesActionPerformed(evt);
+            }
+        });
         jMenu6.add(Mfacultades);
 
         MCarreras.setText("Mantenimiento Carreras");
+        MCarreras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MCarrerasActionPerformed(evt);
+            }
+        });
         jMenu6.add(MCarreras);
 
         MCursos.setText("Mantenimiento Cursos");
+        MCursos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MCursosActionPerformed(evt);
+            }
+        });
         jMenu6.add(MCursos);
 
         MSecciones.setText("Mantenimiento Secciones");
+        MSecciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MSeccionesActionPerformed(evt);
+            }
+        });
         jMenu6.add(MSecciones);
 
         MSedes.setText("Mantenimiento Sedes");
+        MSedes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MSedesActionPerformed(evt);
+            }
+        });
         jMenu6.add(MSedes);
 
         MAulas.setText("Mantenimiento Aulas");
+        MAulas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MAulasActionPerformed(evt);
+            }
+        });
         jMenu6.add(MAulas);
 
         MJornadas.setText("Mantenimiento Jornada");
+        MJornadas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MJornadasActionPerformed(evt);
+            }
+        });
         jMenu6.add(MJornadas);
 
         MAlumnos.setText("Mantenimiento Alumnos");
@@ -125,6 +168,11 @@ private MantenimientoAlumno ventanaAlumno;
         jMenu6.add(MAlumnos);
 
         MMaestros.setText("Mantenimiento Maestros");
+        MMaestros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MMaestrosActionPerformed(evt);
+            }
+        });
         jMenu6.add(MMaestros);
 
         jMenuBar1.add(jMenu6);
@@ -166,6 +214,54 @@ ventanaAlumno= new MantenimientoAlumno();
 ventanaP.add(ventanaAlumno);
 // TODO add your handling code here:
     }//GEN-LAST:event_MAlumnosActionPerformed
+
+    private void MfacultadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MfacultadesActionPerformed
+ventanaFacultad= new MantenimientoFacultad();
+ventanaP.add(ventanaFacultad);
+// TODO add your handling code here:
+    }//GEN-LAST:event_MfacultadesActionPerformed
+
+    private void MCarrerasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MCarrerasActionPerformed
+ventanaCarrera= new MantenimientoCarrera();
+ventanaP.add(ventanaCarrera);
+// TODO add your handling code here:
+    }//GEN-LAST:event_MCarrerasActionPerformed
+
+    private void MCursosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MCursosActionPerformed
+ventanaCurso= new MantenimientoCurso();
+ventanaP.add(ventanaCurso);
+// TODO add your handling code here:
+    }//GEN-LAST:event_MCursosActionPerformed
+
+    private void MSeccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MSeccionesActionPerformed
+ventanaSeccion= new MantenimientoSeccion();
+ventanaP.add(ventanaSeccion);
+// TODO add your handling code here:
+    }//GEN-LAST:event_MSeccionesActionPerformed
+
+    private void MSedesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MSedesActionPerformed
+ventanaSede= new MantenimientoSede();
+ventanaP.add(ventanaSede);
+// TODO add your handling code here:
+    }//GEN-LAST:event_MSedesActionPerformed
+
+    private void MAulasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MAulasActionPerformed
+ventanaAula= new MantenimientoAula();
+ventanaP.add(ventanaAula);
+// TODO add your handling code here:
+    }//GEN-LAST:event_MAulasActionPerformed
+
+    private void MJornadasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MJornadasActionPerformed
+ventanaJornada= new MantenimientoJornada();
+ventanaP.add(ventanaJornada);
+// TODO add your handling code here:
+    }//GEN-LAST:event_MJornadasActionPerformed
+
+    private void MMaestrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MMaestrosActionPerformed
+ventanaMaestro= new MantenimientoMaestro();
+ventanaP.add(ventanaMaestro);
+// TODO add your handling code here:
+    }//GEN-LAST:event_MMaestrosActionPerformed
 
     /**
      * @param args the command line arguments
