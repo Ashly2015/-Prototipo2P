@@ -8,12 +8,12 @@
  *
  * @author ranbr
  */
-public class Mantenimiento extends javax.swing.JInternalFrame {
+public class MantenimientoAlumno extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form Mantenimiento
      */
-    public Mantenimiento() {
+    public MantenimientoAlumno() {
         initComponents();
     }
 
